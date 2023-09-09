@@ -5,6 +5,7 @@ import com.stark.morsocode.DAO.repository.MessageRepository;
 import com.stark.morsocode.DTO.MessageDTO;
 import org.aspectj.bridge.Message;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class MessageService {
     private  final MessageRepository repository;
 

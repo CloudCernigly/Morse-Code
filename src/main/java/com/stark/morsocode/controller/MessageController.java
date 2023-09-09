@@ -19,11 +19,12 @@ public class MessageController {
 
     @GetMapping
     public List<String> getMessages(){
+
         return messageService.getMessages();
     }
 
     @PostMapping
-    public void postMessage(@RequestParam MessageDTO message){
+    public void postMessage(@RequestBody MessageDTO message){
         messageService.putmessage(message);
     }
 
